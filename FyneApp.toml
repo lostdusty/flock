@@ -1,0 +1,8 @@
+Website = "https://github.com/lostdusty/flock"
+
+[Details]
+Icon = "icon-new.png"
+Name = "flock"
+ID = "br.dev.lostdusty.flock"
+Version = "1.0.0"
+Build = 1
