@@ -2,7 +2,7 @@
 
 A simple cat clock desktop app built in Go using Fyne.
 
-[flock app screenshot showing current time, date and information about the author's city weather](./assets/screenshot.png)
+![flock app screenshot showing current time, date and information about the author's city weather](./assets/screenshot.png)
 
 ## Building from source
 
