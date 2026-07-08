@@ -64,9 +64,15 @@ func main() {
 	buttonHelp := widget.NewButton("F1 Show/Hide this pop-up", nil)
 	buttonHelp.Importance = widget.LowImportance
 
+	isOpenSettings := false
 	buttonSettings := widget.NewButton("F2 Change Settings", nil)
 	buttonSettings.Importance = widget.LowImportance
 	showSettings := func() {
+		if isOpenSettings {
+			return
+		}
+		isOpenSettings = true
+
 		selectorDate := widget.NewSelect([]string{"02/01/2006 Monday",
 			"02/01/2006",
 			"01/02/2006 Monday",
@@ -153,6 +159,7 @@ func main() {
 			if b {
 				fyneWindow.Content().Refresh()
 			}
+			isOpenSettings = false
 		}, fyneWindow)
 	}
 	buttonSettings.OnTapped = showSettings
